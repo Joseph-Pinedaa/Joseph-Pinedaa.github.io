@@ -3,28 +3,35 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hercules Model Rocket | Joseph A. Pineda</title>
 <meta name="description" content="Engineering projects by Joseph A. Pineda, Mechatronics student at Texas A&amp;M University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head><body><header class="nav"><div class="wrap">
-<a class="brand" href="../index.html">Joseph A. Pineda</a>
-<nav><a href="../index.html#projects">Projects</a><a href="https://www.linkedin.com/in/joseph-pineda-tamu444" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:jimpix0000@tamu.edu">Email</a></nav>
+<a class="brand" href="../index.html">Joseph Pineda</a>
+<nav aria-label="Main"><a href="../index.html#projects">Projects</a><a href="https://www.linkedin.com/in/joseph-pineda-tamu444" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:jimpix0000@tamu.edu">Email</a></nav>
 </div></header>
 <main class="wrap project">
-<a class="back" href="../index.html#projects">← All projects</a>
-<p class="eyebrow">Personal project</p>
-<h1>Hercules Model Rocket</h1>
-<ul class="facts"><li><b>Type</b>Individual · self-funded</li><li><b>Dates</b>2026 – Present</li><li><b>Status</b>Design complete · build next</li></ul>
-<div class="hero"><figure><img src="../images/hercules-openrocket.jpg" alt="OpenRocket side view of Hercules1_v1" loading="lazy"><figcaption>Hercules1_v1 in OpenRocket. The blue mark is the center of gravity (CG); the red dot is the center of pressure (CP).</figcaption></figure></div>
-<p class="lede">Hercules is a rocket I designed myself in OpenRocket and paid for out of pocket. The design is done and all the parts are bought; the build is next.</p>
-<div class="stats"><div><b>1.48 cal</b><span>Stability margin</span></div><div><b>174 m</b><span>Predicted apogee (571 ft)</span></div><div><b>Mach 0.19</b><span>Peak velocity (64.5 m/s)</span></div><div><b>148 m/s²</b><span>Peak acceleration</span></div><div><b>55.9 cm</b><span>Length · 4.16 cm diameter</span></div><div><b>90.2 g</b><span>Liftoff mass · 67.1 g dry</span></div></div>
-<ul class="tags"><li>OpenRocket</li><li>Barrowman stability analysis</li><li>Flight simulation</li></ul>
+<a class="back" href="../index.html#projects">All projects</a>
+<div class="top">
+<div><h1>Hercules Model Rocket</h1><p class="lede">Hercules is a rocket I designed myself in OpenRocket and paid for out of pocket. The design is done and all the parts are bought; the build is next.</p></div>
+<table class="titleblock"><caption class="sr">Project details</caption><tbody>
+<tr><td colspan="2"><span class="k">Project</span>Personal project</td></tr>
+<tr><td><span class="k">Type</span>Individual, self-funded</td><td><span class="k">Dates</span>2026 – Present</td></tr>
+<tr><td colspan="2"><span class="k">Status</span>Design complete, build next</td></tr>
+<tr><td colspan="2"><span class="k">Tools</span>OpenRocket, Barrowman stability analysis, Flight simulation</td></tr>
+<tr><td><span class="k">Drawn by</span>J. Pineda</td><td><span class="k">Sheet</span>3 of 5</td></tr>
+</tbody></table>
+</div>
+<div class="view"><figure><img src="../images/hercules-openrocket.jpg" alt="OpenRocket side view of Hercules1_v1"><figcaption>Hercules1_v1 in OpenRocket. The blue mark is the center of gravity (CG); the red dot is the center of pressure (CP).</figcaption></figure></div>
 <div class="detail">
 <h2>What it is and why I did it</h2><p>I wanted a project that goes through the full engineering loop: model it, simulate it, build it, measure it, and revise. I call it a program rather than a single launch because the goal is a repeatable airframe I can keep improving between builds.</p>
 <h2>My role</h2><p>Everything: design, analysis, sourcing parts, and soon the build and flight testing.</p>
-<h2>Process</h2><ol><li><b>Airframe and materials.</b> 41.6 mm (BT-60) paper body tube, plastic nose cone, fins cut from 1/8 in. balsa sheet, an 18 mm heavy-duty motor mount for an Estes C6-5 motor, and a plastic parachute with recovery wadding.</li><li><b>Stability.</b> A rocket only flies straight if its center of pressure (where the aerodynamic forces act) is behind its center of gravity. I used the Barrowman method to calculate where the CP sits, then changed fin size and shape until the CP was 6.2 cm behind the CG: 1.48 body diameters, or “calibers.” 1–2 calibers is the target. Less and it can tumble; much more and it turns into the wind.</li><li><b>Performance prediction.</b> I ran OpenRocket’s flight simulation with the C6-5 motor to predict apogee (174 m), peak speed (64.5 m/s, Mach 0.19), and peak acceleration (148 m/s²).</li><li><b>Recovery.</b> The parachute ejects off a shock cord, timed to the motor’s 5-second delay so it opens near apogee.</li><li><b>Documentation.</b> I wrote up the design rationale and predictions in a technical report.</li></ol>
+<h2>Specifications</h2><table class="spec"><tbody><tr><th scope="row">Stability margin</th><td>1.48 cal</td></tr><tr><th scope="row">Predicted apogee (571 ft)</th><td>174 m</td></tr><tr><th scope="row">Peak velocity (64.5 m/s)</th><td>Mach 0.19</td></tr><tr><th scope="row">Peak acceleration</th><td>148 m/s²</td></tr><tr><th scope="row">Length, 4.16 cm diameter</th><td>55.9 cm</td></tr><tr><th scope="row">Liftoff mass, 67.1 g dry</th><td>90.2 g</td></tr></tbody></table>
+<h2>Process</h2><ol class="steps"><li><b>Airframe and materials.</b> 41.6 mm (BT-60) paper body tube, plastic nose cone, fins cut from 1/8 in. balsa sheet, an 18 mm heavy-duty motor mount for an Estes C6-5 motor, and a plastic parachute with recovery wadding.</li><li><b>Stability.</b> A rocket only flies straight if its center of pressure (where the aerodynamic forces act) is behind its center of gravity. I used the Barrowman method to calculate where the CP sits, then changed fin size and shape until the CP was 6.2 cm behind the CG: 1.48 body diameters, or “calibers.” 1–2 calibers is the target. Less and it can tumble; much more and it turns into the wind.</li><li><b>Performance prediction.</b> I ran OpenRocket’s flight simulation with the C6-5 motor to predict apogee (174 m), peak speed (64.5 m/s, Mach 0.19), and peak acceleration (148 m/s²).</li><li><b>Recovery.</b> The parachute ejects off a shock cord, timed to the motor’s 5-second delay so it opens near apogee.</li><li><b>Documentation.</b> I wrote up the design rationale and predictions in a technical report.</li></ol>
 <h2>Results and what’s next</h2><p>All parts are on hand. Next: assemble the rocket, fly it, and compare the measured apogee against the 174 m prediction. This page will become the build log.</p>
 
 </div>
-<h2>Gallery</h2><div class="gallery"><div class="ph"><span>Add photo</span>Parts laid out before the build</div><div class="ph"><span>Add photo</span>Fin cutting / motor mount assembly</div><div class="ph"><span>Add photo</span>Finished rocket on the pad</div></div>
-<nav class="pager"><a href="motor-controller.html">← DC Motor Controller</a><a href="training-app.html">Personal Training App →</a></nav>
-</main><footer><div class="wrap">© 2026 Joseph A. Pineda · Mechatronics, Texas A&amp;M University · <a href="https://www.linkedin.com/in/joseph-pineda-tamu444">LinkedIn</a> · <a href="mailto:jimpix0000@tamu.edu">jimpix0000@tamu.edu</a></div></footer>
+<h2>Gallery</h2><div class="gallery"><!-- TODO add photo: Parts laid out before the build --><div class="ph"><span>Photo coming soon</span></div><!-- TODO add photo: Fin cutting / motor mount assembly --><div class="ph"><span>Photo coming soon</span></div><!-- TODO add photo: Finished rocket on the pad --><div class="ph"><span>Photo coming soon</span></div></div>
+<nav class="pager" aria-label="More projects"><a href="motor-controller.html"><span class="k">Previous</span>DC Motor Controller</a><a class="next" href="training-app.html"><span class="k">Next</span>Personal Training App</a></nav>
+</main><footer><div class="wrap"><span>Joseph A. Pineda, Mechatronics, Texas A&amp;M University</span><span><a href="https://www.linkedin.com/in/joseph-pineda-tamu444">LinkedIn</a> <a href="mailto:jimpix0000@tamu.edu">jimpix0000@tamu.edu</a></span></div></footer>
 </body></html>

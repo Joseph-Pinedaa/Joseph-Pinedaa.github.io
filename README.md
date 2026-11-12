@@ -23,10 +23,10 @@ Each page opens with an image and a 2–3 sentence summary so recruiters can ski
 
 ## Adding photos
 
-Gray dashed boxes marked **ADD PHOTO** are placeholders. To fill one:
+Grid boxes that say **Photo coming soon** are placeholders. Each one has an HTML comment right before it (`<!-- TODO add photo: ... -->`) saying which photo goes there. To fill one:
 
 1. Drop the image into `images/` (e.g. `images/hercules-build-1.jpg`). Keep files under ~500 KB. Resize phone photos first.
-2. In the project page, replace the placeholder `<div class="ph">…</div>` with:
+2. In the project page, replace the comment and the `<div class="ph">…</div>` after it with:
    ```html
    <figure><img src="../images/hercules-build-1.jpg" alt="Describe the photo"><figcaption>Caption</figcaption></figure>
    ```
